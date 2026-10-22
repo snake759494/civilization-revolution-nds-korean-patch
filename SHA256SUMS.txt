@@ -1,0 +1,3 @@
+66df29768e91ec8bd433dcd336807a0fee25e7abf756499009946decd5e7b4f2  Sid Meier's Civilization Revolution (Japan).nds
+8ca0d302406b3a662151131c901524f3a9ce72ffa4f480bc90a668fe486cd7e1  Sid Meier's Civilization Revolution (Korean).nds
+c45033aadef03d5f032edc8290813b93df6b2b9233bf1151181c82af4a78d8f6  CivRev_KR.xdelta

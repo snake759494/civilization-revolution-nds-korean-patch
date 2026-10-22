@@ -1,0 +1,16 @@
+*.nds
+*.xdelta
+*.exe
+*.dll
+*.bdf
+*.ttf
+*.otf
+*.sav
+*.dsv
+*.dst
+__pycache__/
+orig/
+tmp/
+chunks/
+fonts/
+runtime/

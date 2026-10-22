@@ -1,0 +1,21 @@
+{
+  "game": "시드 마이어의 문명 레볼루션 (シドマイヤーズ シヴィライゼーション レボリューション)",
+  "platform": "Nintendo DS",
+  "game_code": "YS6J",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "repository": "snake759494/civilization-revolution-nds-korean-patch",
+  "release_asset": {"name": "CivRev_KR.xdelta", "bytes": 619796, "sha256": "c45033aadef03d5f032edc8290813b93df6b2b9233bf1151181c82af4a78d8f6"},
+  "source": {"name": "Sid Meier's Civilization Revolution (Japan).nds", "bytes": 67108864, "sha256": "66df29768e91ec8bd433dcd336807a0fee25e7abf756499009946decd5e7b4f2"},
+  "output": {"name": "Sid Meier's Civilization Revolution (Korean).nds", "bytes": 41812360, "sha256": "8ca0d302406b3a662151131c901524f3a9ce72ffa4f480bc90a668fe486cd7e1"},
+  "xdelta_options": ["-0", "-S", "none"],
+  "reconstruction_matches": true,
+  "str_slots": 8873,
+  "str_translated_slots": 8802,
+  "str_unique_translated": 8683,
+  "str_untranslated": 0,
+  "name_files": 8,
+  "hangul_glyphs": 829,
+  "graphics_scanned": 869,
+  "runtime_full_playthrough": false
+}
