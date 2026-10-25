@@ -18,7 +18,7 @@ for p in sorted(glob.glob(os.path.join(W,'translation','str_*.json'))):
 txt_tr={}
 for p in sorted(glob.glob(os.path.join(W,'translation','txt_*.json'))):txt_tr.update(jload(p))
 # 한글 문자 수집 및 코드 배정
-texts=list(tr.values())+[v for d in txt_tr.values() for v in d]
+texts=list(tr.values())+['제']+[v for d in txt_tr.values() for v in d]
 hangul=sorted({c for t in texts for c in t if 0xAC00<=ord(c)<=0xD7A3})
 f0=NFTR(rom.files[fid('font/Arial14.nftr')])
 slots=sorted(c for c in f0.cmap if c>=0x889f)
@@ -43,6 +43,10 @@ for name,lines in txt_tr.items():
         else:res.append(line)
     assert k==len(lines),(name,k,len(lines))
     rom.files[fid(path)]=enc('\r\n'.join(res))
+# ARM9 서수 서식 「第%d」→「제%d」 (같은 길이)
+a9=bytearray(rom.arm9);o=0x185230
+assert a9[o:o+6]==bytes.fromhex('91e625640000'),a9[o:o+6]
+a9[o:o+2]=enc('제');rom.arm9=bytes(a9)
 # 폰트: 갈무리11 네이티브 11x11
 G=bdf.load(os.path.join(W,'fonts','Galmuri11.bdf'))
 for path,top in [('font/Arial14.nftr',1),('Arial14.NFTR',0)]:
